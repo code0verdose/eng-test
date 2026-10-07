@@ -1,0 +1,27 @@
+.goose {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: transform 60ms ease-out;
+}
+
+.goose:active:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.goose:disabled {
+  cursor: default;
+}
+
+.image {
+  display: block;
+  width: min(320px, 80vw);
+  height: auto;
+  pointer-events: none;
+}
